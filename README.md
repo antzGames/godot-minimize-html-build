@@ -52,7 +52,7 @@ The add-on resaves large files (.pck, .wasm) with gzip compression, minifies cor
 
 ## Detailed explanation
 
-### Step-by-step algorythm
+### Step-by-step algorithm
 1. Godot creates release files.
 2. The addon copies additional and temporary files to the build directory (pako.js, compressor, minifier)
 3. Using a [tool written in Go](#why-golang-compresser) (see `/vendor/bin/compress/src` in the plugin directory), the **.pck** and **.wasm** files are converted to a gzip enconding
